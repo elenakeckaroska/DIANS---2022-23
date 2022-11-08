@@ -1,0 +1,17 @@
+d 
+lat lon
+name
+name:en
+tourism
+website 
+stars
+email / phone
+addr:city
+addr:postcode
+addr:street
+addr:street:mk
+addr:housenumber
+smoking
+rooms
+internet_access:
+internet_access:fee
