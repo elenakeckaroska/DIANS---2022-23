@@ -1,0 +1,83 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "id": 497549478,
+      "lat": 41.700628,
+      "lon": 22.8587642,
+      "tags": {
+        "name": "Хотел Манастир",
+        "name:en": "Manastir Hotel",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1234758726,
+      "lat": 41.7107367,
+      "lon": 22.8518197,
+      "tags": {
+        "name": "На Филип Кашчата",
+        "tourism": "chalet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1872779042,
+      "lat": 41.6767336,
+      "lon": 22.896807,
+      "tags": {
+        "name": "Вила Вакане",
+        "source": "Bing",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1872779050,
+      "lat": 41.6774869,
+      "lon": 22.8963993,
+      "tags": {
+        "int_name": "Vila Fidanski",
+        "name": "Вила Фидански",
+        "source": "Bing",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1872779051,
+      "lat": 41.6783964,
+      "lon": 22.893422,
+      "tags": {
+        "int_name": "Vila Nesho",
+        "name": "Вила Нешо",
+        "source": "Bing",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1872779055,
+      "lat": 41.6730814,
+      "lon": 22.9094697,
+      "tags": {
+        "int_name": "Bistra",
+        "name": "Бистра",
+        "source": "Bing",
+        "tourism": "motel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5747987427,
+      "lat": 41.6570076,
+      "lon": 22.9692869,
+      "tags": {
+        "name": "Клепало",
+        "name:en": "Klepalo",
+        "tourism": "motel"
+      }
+    }
+  ]
+}

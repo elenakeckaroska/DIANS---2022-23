@@ -1,0 +1,75 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "id": 461663944,
+      "lat": 41.4396276,
+      "lon": 22.6418073,
+      "tags": {
+        "name": "Hotel Tiveriopol",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 461664195,
+      "lat": 41.436015,
+      "lon": 22.6431437,
+      "tags": {
+        "name": "Хотел Илинден",
+        "name:en": "Hotel Ilinden",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2407057399,
+      "lat": 41.4368416,
+      "lon": 22.6379904,
+      "tags": {
+        "name": "Хотел Централ",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2670729336,
+      "lat": 41.4377107,
+      "lon": 22.6372913,
+      "tags": {
+        "name": "404",
+        "tourism": "motel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7567420789,
+      "lat": 41.4417498,
+      "lon": 22.6379903,
+      "tags": {
+        "name": "golf kurcenje",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7567423686,
+      "lat": 41.4380184,
+      "lon": 22.6451676,
+      "tags": {
+        "name:en": "Tost strumica",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10012739436,
+      "lat": 41.4512932,
+      "lon": 22.6471258,
+      "tags": {
+        "name": "Hotel Eterno",
+        "tourism": "hotel"
+      }
+    }
+  ]
+}

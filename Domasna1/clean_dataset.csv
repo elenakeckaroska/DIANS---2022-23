@@ -1,0 +1,228 @@
+,index,lat,lon,tags.name,tags.tourism,tags.website,tags.stars,tags.email,tags.phone,tags.addr:city,tags.addr:city:en,tags.addr:postcode,tags.addr:street:en,tags.addr:street:mk,tags.addr:housenumber,tags.smoking,tags.rooms,tags.internet_access,tags.internet_access:fee
+0,2,41.9766582,21.4087904,Хотел Водно,hotel,http://hotelimakedonija.com.mk/mk/Hotel/57/Hotel-Vodno-Skopje,3,,,Skopje,Скопје,1000,,,,outside,,yes,no
+1,4,41.9761668,21.4358015,Hotel Imperial,hotel,,3,,,Skopje,Скопје,1000,,,,isolated,,yes,no
+2,5,41.9762321,21.4362154,Sun Hotel,hotel,,3,,,Skopje,Скопје,1000,,,,outside,,yes,no
+3,6,41.9899385,21.454931,hotel porta,hotel,http://www.hotelporta.com.mk/,5,,,Skopje,Скопје,1000,,,,outside,,yes,no
+4,7,41.9899482,21.4198508,Хотел 7,hotel,,5,,,Skopje,Скопје,1000,,,,outside,,no,yes
+5,8,42.0037446,21.4244806,Канет,hotel,,5,,,Skopje,Скопје,1000,,,,separated,,no,no
+6,9,41.9944128,21.4063454,Вук;Никем,hostel,,3,,,Skopje,Скопје,1000,,,,separated,,no,yes
+7,14,41.980192,21.440152,Hotel Orange Inn,hotel,https://www.booking.com/hotel/mk/orange-inn.en-gb.html?sid=1ddd35f0ef4f22510d37f152a78ce4a3,3,info@orangeinn.com.mk,+38922772254,Skopje,Скопје,1000,,,,outside,,yes,no
+8,15,41.9842736,21.4340308,Хостел Хостел,hostel,,3,,,Skopje,Скопје,1000,,,,outside,,yes,no
+9,16,41.9849555,21.4321318,Сити Хостел,hostel,,1,,+38970226165,Skopje,Скопје,1000,,,6,outside,,yes,no
+10,17,41.9801123,21.4249793,Хотел Турена,hotel,,3,,,Skopje,Скопје,1000,,,,separated,,yes,no
+11,18,41.9843835,21.4262323,Александар,hotel,,1,,,Skopje,Скопје,1000,,,24,separated,,yes,yes
+12,19,41.9948912,21.4329531,Hotel City Central International,hotel,,5,,,Skopje,Скопје,1000,,,,isolated,,yes,yes
+13,20,42.0055458,21.3755273,Мрамор,hotel,,2,,,Skopje,Скопје,1000,,,,separated,,yes,no
+14,24,41.9941717,21.4068121,Hotel Kapistec,hotel,,3,,,Skopje,Скопје,1000,,,,isolated,,no,no
+15,25,41.9824332,21.4347873,Кастело,hostel,https://hostelkalonis.wordpress.com/,5,,+38970631832,Skopje,Скопје,1000,,,47,separated,,yes,no
+16,27,41.9921961,21.4208286,Rezidencija Ancevski,guest_house,,3,,,Skopje,Скопје,1000,,,,isolated,,yes,no
+17,28,41.9952955,21.4315713,Пелистер,hotel,https://www.pelisterhotel.com.mk/,5,,,Skopje,Скопје,1000,,,,outside,,yes,yes
+18,29,41.9994486,21.4380987,Hotel De KOKA,hotel,www.hoteldekoka.mk,3,info@hoteldekoka.mk,+38923112200,Skopje,Скопје,1000,,бул. Гоце Делчев,5,separated,36,yes,yes
+19,30,41.9984102,21.3924091,ОК Хотел,hotel,http://www.okhotel.mk/,4,contact@okhotel.mk,+38923067067,Skopje,Скопје,1000,Londonska,,19,isolated,,yes,no
+20,32,41.995617,21.4303313,Square,hotel,,3,,,Skopje,Скопје,1000,,,,outside,,yes,no
+21,34,41.9945457,21.441776,Hotel Kej,hotel,,3,,,Skopje,Скопје,1000,,,38,outside,,no,no
+22,36,42.0020489,21.440168,Султан,hotel,,5,,,Skopje,Скопје,1000,,,бб,separated,,no,no
+23,37,42.0021398,21.4401529,Голд,hotel,http://www.hotelgold.mk/,5,,,Skopje,Скопје,1000,,,13,isolated,,yes,no
+24,38,42.0022531,21.438941,Клан,hotel,http://hotelimakedonija.com.mk/mk/Hotel/42/Hotel-Klan-Skopje,1,,,Skopje,Скопје,1000,,,,outside,,yes,yes
+25,39,42.0051439,21.4160939,Скопје,hotel,http://hotelimakedonija.com.mk/mk/Hotel/125/Hotel-Skopje-Skopje,4,,,Skopje,Скопје,1000,,,27,outside,,no,yes
+26,40,42.0073634,21.4871868,Hunter’s Lodge “Kamnik”,hotel,http://www.kamnik.com.mk/,3,,,Skopje,Скопје,1000,,,,isolated,,yes,no
+27,41,42.0153336,21.4079869,Вергина,hotel,http://www.hotelvergina.com/,4,,,Skopje,Скопје,1000,,,,separated,,yes,yes
+28,42,41.9870966,21.4201316,Тасино Чешмиче,hotel,,2,,,Skopje,Скопје,1000,,,28,separated,,no,no
+29,51,41.9901385,21.4061845,Арс,hostel,,5,,,Skopje,Скопје,1000,,,,isolated,,yes,no
+30,60,42.0112718,21.372544,Feng Shui Apartments,guest_house,,5,,,Skopje,Скопје,1000,,,15,separated,,yes,no
+31,61,41.9968442,21.4157891,Влахо,hotel,,4,,+38926092301,Skopje,Скопје,1000,,,3,separated,,yes,no
+32,65,41.980734,21.4383615,Студентски дом Пелагонија,guest_house,,1,,,Skopje,Скопје,1000,,,,separated,,yes,yes
+33,66,41.994574,21.4417693,kej,hostel,,5,,,Skopje,Скопје,1000,,,,separated,,yes,no
+34,67,41.9940541,21.407239,Hotel Pine,hotel,,3,,,Skopje,Скопје,1000,,,,outside,,no,no
+35,68,41.9951281,21.4312446,ARSS Apartment Skopje Main Square,guest_house,https://www.facebook.com/skopjeapartments,5,,+38970332285,Skopje,Скопје,1000,,,22,outside,3,yes,no
+36,73,41.9816082,21.4215251,Хотел Скала,hotel,,2,,,Skopje,Скопје,1000,,,,separated,,no,no
+37,74,41.9904434,21.4179475,"Apartments ""A"" - Апартмани ""А""",apartment,,1,,,Skopje,Скопје,1000,,,26,isolated,5,yes,no
+38,76,41.9986179,21.416879,Hotel Elite Plaza,hotel,,2,,,Skopje,Скопје,1000,,,,separated,,yes,yes
+39,77,42.0026457,21.3630234,Колективен Објект за Димување - Зградс,guest_house,,5,,,Skopje,Скопје,1000,,,38,outside,,yes,no
+40,78,42.0117796,21.445242,Alba Hotel,hotel,,5,,,Skopje,Скопје,1000,,,,isolated,,yes,yes
+41,79,42.0004589,21.4150646,Skopje Home Apartment,hotel,http://www.skopjehome.com,2,skopjehome@gmail.com,,Skopje,Скопје,1000,,,34,isolated,,yes,no
+42,80,41.9911246,21.4219417,The Comfy Hostel 2,hostel,,2,,,Skopje,Скопје,1000,,,,outside,3,yes,no
+43,81,41.9788535,21.432752,Antigona Apartments,guest_house,,4,,+38978866935,Skopje,Скопје,1000,,,128,separated,,yes,no
+44,89,41.9930093,21.4295391,Hotel Elsa,hotel,,3,,,Skopje,Скопје,1000,,,,separated,,yes,no
+45,90,41.9926997,21.4199449,Queen’s Hotel,hotel,http://www.queenshotel.com.mk,5,,,Skopje,Скопје,1000,,,,outside,,yes,no
+46,91,41.988699,21.457967,Дома,apartment,,3,,,Skopje,Скопје,1000,,,,outside,,yes,no
+47,92,41.9855516,21.4382328,Flatiron apartment,apartment,,3,,,Skopje,Скопје,1000,,,,separated,,yes,no
+48,133,41.9854412,21.4320007,시티 호스텔,hostel,,3,,,Skopje,Скопје,1000,,,6,outside,,yes,no
+49,166,41.9890144,21.4421007,Guest House Station,hostel,,4,,,Skopje,Скопје,1000,,,,outside,,yes,no
+50,167,41.9891739,21.4432433,Valentin 2,hostel,,4,,,Skopje,Скопје,1000,,,,outside,,yes,no
+51,168,41.9890951,21.4284265,Sir Oliver Apartments,guest_house,,1,,,Skopje,Скопје,1000,,,,outside,,yes,yes
+52,187,41.9854542,21.4382952,Apartman Fandikaro,apartment,,3,,,Skopje,Скопје,1000,,,,isolated,,yes,no
+53,204,41.9844223,21.4214103,Салвадор Аљенде,apartment,,5,,,Skopje,Скопје,1000,,,71,isolated,,yes,no
+54,221,42.0009974,21.4380625,Хотел Ален,hotel,,1,,,Skopje,Скопје,1000,,,,isolated,,yes,no
+55,223,41.9812959,21.4290454,Sirma's House,hostel,,5,,,Skopje,Скопје,1000,,,29,isolated,,yes,no
+56,233,41.9952645,21.415128,Vlez levo od Vasov elektrika,apartment,,2,,,Skopje,Скопје,1000,,,40,separated,,no,no
+57,242,41.9977486,21.42885,3M Apartment Skopje Center,apartment,https://www.facebook.com/3M.Apartment.Skopje.Center,2,3m.apartment@gmail.com,+38970821177,Skopje,Скопје,1000,,,29,outside,2,yes,no
+58,250,41.9586194,21.4421896,Residence,apartment,,5,,,Skopje,Скопје,1000,,,292 А,outside,,yes,no
+59,253,41.9735902,21.4582502,Мако и Ања,guest_house,,4,,+38977767272,Skopje,Скопје,1000,,,19,outside,,yes,no
+60,254,41.999111,21.4159229,Nordic Hostel,hostel,https://nordichostel.com,4,,,Skopje,Скопје,1000,,,14a,separated,,yes,no
+61,312,42.000549,21.4151446,Pro fit,apartment,,5,,,Skopje,Скопје,1000,,,34,outside,,yes,no
+62,362,41.9856205,21.4185394,Villa Alexander,hotel,,5,,,Skopje,Скопје,1000,,,,outside,,yes,no
+63,364,42.0010327,21.4366814,RM,hotel,,1,,,Skopje,Скопје,1000,,,,outside,,no,no
+64,365,41.9996627,21.4375911,De koka,hotel,,5,,,Skopje,Скопје,1000,,,,outside,,yes,no
+65,368,41.9866515,21.433766,Joan,apartment,,4,,,Skopje,Скопје,1000,,,40,isolated,,no,no
+66,382,41.9973603,21.4344666,Stone Bridge,hotel,,1,,,Skopje,Скопје,1000,,,,separated,,yes,yes
+67,383,41.9998152,21.4377681,Hostel,hostel,,4,,,Skopje,Скопје,1000,,,,outside,,yes,no
+68,443,41.9914244,21.4248673,per kurriz,apartment,,4,,,Skopje,Скопје,1000,,,,outside,,yes,yes
+69,446,41.9928201,21.430246,Skopje Deluxe Apartments,apartments,,3,,,Skopje,Скопје,1000,,,,isolated,,no,no
+70,484,42.0044944,21.4619861,Трифун Хаџи Јанев,apartment,,4,,,Skopje,Скопје,1000,,,,separated,,yes,yes
+71,487,41.9902902,21.4693383,DOMA,apartment,,2,,,Skopje,Скопје,1000,,,,outside,,yes,no
+72,509,41.9791271,21.4702172,20,apartment,,4,,,Skopje,Скопје,1000,,,20,outside,,yes,no
+73,512,42.0025725,21.3620267,Mice kozar 37,apartment,,3,,,Skopje,Скопје,1000,,,,outside,,yes,no
+74,514,42.0077019,21.3703494,Bulevar Hotel,hotel,,3,,,Skopje,Скопје,1000,,,,outside,,yes,no
+75,520,42.0371952,21.4505652,Резиденција Чапов,apartment,,5,,,Skopje,Скопје,1000,,,8,isolated,,yes,no
+76,522,41.9834697,21.4208768,Панорама резиденс,apartment,,5,,,Skopje,Скопје,1000,,,77,isolated,,no,no
+77,534,41.9974029,21.4234219,Ani,hotel,,1,,,Skopje,Скопје,1000,,,,separated,,yes,no
+78,535,42.0006611,21.4380384,Doa,hotel,,5,,,Skopje,Скопје,1000,,,,separated,,yes,yes
+79,536,42.0004054,21.4253898,Villa Nina,hotel,,5,,,Skopje,Скопје,1000,,,,outside,,yes,no
+80,537,41.9955032,21.429975,Cara,hotel,,5,,,Skopje,Скопје,1000,,,,separated,,yes,no
+81,538,42.0021157,21.4380515,Santos,hotel,,3,,,Skopje,Скопје,1000,,,,isolated,,yes,yes
+82,539,42.0008751,21.4150013,Dolce International Hotel,hotel,https://www.hoteldolce.mk/,5,,,Skopje,Скопје,1000,,,,separated,,yes,no
+83,540,42.0104341,21.3716663,ул. 1606 бр. 4,apartment,,1,,,Skopje,Скопје,1000,,,4,outside,,yes,no
+84,541,42.0083326,21.3916165,Елема Лука Твинс,apartment,,2,,,Skopje,Скопје,1000,,,14,isolated,,yes,yes
+85,542,42.0086725,21.3916879,Елена Лука Твинс,apartment,,1,,,Skopje,Скопје,1000,,,,outside,,yes,no
+86,544,41.9945949,21.3997882,Living Rooms Hotel,hotel,https://livingrooms.mk,1,,+38975267999,Skopje,Скопје,1000,,,,separated,,yes,no
+87,1618,41.700628,22.8587642,Хотел Манастир,hotel,,2,,,Berovo,Берово,2330,,,,separated,,yes,yes
+88,1620,41.6767336,22.896807,Вила Вакане,guest_house,,3,,,Berovo,Берово,2330,,,,isolated,,yes,no
+89,1621,41.6774869,22.8963993,Вила Фидански,guest_house,,3,,,Berovo,Берово,2330,,,,separated,,yes,no
+90,1622,41.6783964,22.893422,Вила Нешо,guest_house,,4,,,Berovo,Берово,2330,,,,outside,,yes,no
+91,1625,41.026562,21.3295834,Guesthouse,guest_house,,5,,,Bitola,Битола,7000,,,,outside,,yes,no
+92,1626,41.0298294,21.3324955,Goldy Hostel Bitola,hostel,,2,,,Bitola,Битола,7000,,,15,outside,,yes,no
+93,1627,41.0276578,21.3372648,Tokin House,hotel,www.tokin-house.com,1,,,Bitola,Битола,7000,,,,separated,,yes,no
+94,1628,41.0223734,21.3410777,Domestika Hostel,hostel,http://hostel-domestika-bitola.eu/,4,,+38947230715,Bitola,Битола,7000,,,,outside,,yes,yes
+95,1630,41.0256315,21.3312283,Hotel Teatar,hotel,,4,,,Bitola,Битола,7000,,,35,outside,,yes,no
+96,1631,41.0157263,21.3475881,Eri corporation Bitola,apartment,,3,,,Bitola,Битола,7000,,,,separated,,yes,no
+97,1633,41.1414679,22.5042089,Ашикот,hotel,,2,,,Gevgelija,Гевгелија,1480,,,,outside,,yes,no
+98,1634,41.1405889,22.5048372,Holiday Han,hotel,http://holidayhan.com/,1,holidayhan@yahoo.com,+38934611593,Gevgelija,Гевгелија,1480,,,110,outside,,no,yes
+99,1635,41.1411114,22.5038741,Apollonia Hotel,hotel,,5,,,Gevgelija,Гевгелија,1480,,,,outside,,no,no
+100,1636,41.1408672,22.5124945,Magnolia Apartment,apartment,,3,,+38970740345,Gevgelija,Гевгелија,1480,,,24,outside,,yes,no
+101,1637,41.1464743,22.5047279,Jana Apartments,guest_house,,3,,,Gevgelija,Гевгелија,1480,,,,outside,,yes,yes
+102,1638,41.1357078,22.4908565,Вила Катерина,guest_house,,1,,,Gevgelija,Гевгелија,1480,,,,outside,,yes,no
+103,1639,41.4440951,22.0082491,Feni,hotel,,4,,,Kavadarci,Кавадарци,1430,,,,outside,,yes,yes
+104,1640,41.4397684,22.0103655,UniPalas,hotel,,5,,,Kavadarci,Кавадарци,1430,,,,outside,,yes,no
+105,1641,41.4415393,21.9977886,Уни Палас 2,hotel,,2,,,Kavadarci,Кавадарци,1430,,,,outside,,no,no
+106,1642,42.135611,21.7224017,Apartman,hotel,https://www.pazar3.mk/mk/Listing/AdDetail/Index/1148323-LUKSUZNO-OPREMENI-STANOVI-APARTMANI,3,,078-277-048,Kumanovo,Куманово,1300,,,,outside,,no,no
+107,1643,42.1534515,21.7301573,Сателит,hotel,,3,,,Kumanovo,Куманово,1300,,,,outside,,yes,no
+108,1644,42.1373916,21.7042207,adra home,guest_house,,4,,,Kumanovo,Куманово,1300,,,,outside,,yes,no
+109,1645,42.137227,21.7043546,adrsscreen home,apartment,http://www.facebook.com,1,adrsscreen@gmail.com,+38971611422,Kumanovo,Куманово,1300,,,25/1-9,outside,,yes,no
+110,1646,42.121535,21.7435248,Kumanovo Spa,hotel,,2,,,Kumanovo,Куманово,1300,,,,isolated,21,yes,no
+111,1647,41.1119117,20.7944769,Вила Албина,guest_house,,2,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+112,1648,41.1120923,20.8059275,De Lux Apartments Ohrid,hotel,,1,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+113,1649,41.1056053,20.8082706,HOTEL GARDEN,hotel,,3,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+114,1650,41.1202504,20.7992249,Apartmani Joce,guest_house,,4,,,Ohrid,Охрид,6000,,,,isolated,,yes,no
+115,1651,41.1126572,20.7969076,Вила Мал Свети Климент,guest_house,https://vilamalsvetikliment.com/,4,,+38946250655,Ohrid,Охрид,6000,,,10,outside,,yes,no
+116,1652,41.114294,20.79913,Apartments Stars,guest_house,,5,,,Ohrid,Охрид,6000,,,32,separated,,yes,yes
+117,1653,41.1129419,20.7988751,Hostel di Angollo,hostel,,4,,,Ohrid,Охрид,6000,,,,isolated,,yes,yes
+118,1654,41.1130555,20.8016699,DJ Apartments,guest_house,,4,,,Ohrid,Охрид,6000,,,,isolated,,no,no
+119,1655,41.1108779,20.8038545,Апартмани Симоноски,guest_house,,4,,,Ohrid,Охрид,6000,,,,isolated,,no,no
+120,1656,41.1121098,20.8016881,Ривиера,hotel,,4,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+121,1657,41.1099144,20.8046742,Сити Палас,hotel,,3,,,Ohrid,Охрид,6000,,,,separated,,no,no
+122,1658,41.1192679,20.7845353,Мизо,hotel,,1,,,Ohrid,Охрид,6000,,,,isolated,,no,yes
+123,1659,41.1114353,20.794219,"Апартмани ""Kрај eзеро"", Охрид",guest_house,https://sites.google.com/site/arohrid,2,ar.ohrid@gmail.com,+38970550590,Ohrid,Охрид,6000,,,4,outside,4,yes,no
+124,1660,41.1130805,20.8121042,House Nativa,guest_house,,2,,,Ohrid,Охрид,6000,,,14,separated,,no,yes
+125,1661,41.121256,20.813226,Hostel Valentin ,hostel,,3,,,Ohrid,Охрид,6000,,,96,outside,,yes,no
+126,1663,41.1124995,20.7988026,Villa Square Ohrid,hotel,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+127,1664,41.11257,20.7985193,Villa Tabana,hotel,,3,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+128,1665,41.1125176,20.7982936,Villa Harmony,hotel,,2,,,Ohrid,Охрид,6000,,,,outside,,yes,yes
+129,1666,41.112593,20.798076,Villa De Lago,hotel,,2,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+130,1667,41.1125227,20.7978445,Costa House,hotel,,2,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+131,1668,41.111887,20.7974658,Вила Свети Никола,hotel,,4,,,Ohrid,Охрид,6000,,,,outside,,no,no
+132,1669,41.1216886,20.7819966,"Maja, Anja, Zoko Relax",guest_house,,2,,,Ohrid,Охрид,6000,,,,separated,,no,no
+133,1670,41.112396,20.797118,Апартмани Марија,hotel,,5,,+38975285609,Ohrid,Охрид,6000,,,34,outside,,yes,no
+134,1672,41.1229582,20.8253145,Doma,guest_house,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,yes
+135,1674,41.1200679,20.8019743,Agartha Hostel Ohrid,hostel,http://www.hostelagartha.com,1,hostelagarthaohrid@hotmail.com,0038977644708,Ohrid,Охрид,6000,,,39,outside,,yes,no
+136,1675,41.1176909,20.8213829,Guest House Hristiva,guest_house,,1,,,Ohrid,Охрид,6000,,,84,outside,,yes,no
+137,1676,41.1143441,20.8014261,Ohrid City Center,apartment,,3,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+138,1677,41.1089237,20.8058802,Тино,hotel,,3,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+139,1680,41.1114873,20.7939245,Каневче,guest_house,,1,,+38970424304,Ohrid,Охрид,6000,,,3,outside,,yes,no
+140,1681,41.1122201,20.7949101,"Вила ""Света Софија""",hostel,http://www.vilasofija.com.mk,4,contact@vilasofija.com.mk,+38946254370,Ohrid,Охрид,6000,,,64,outside,,yes,yes
+141,1682,41.119307,20.8054883,Bitrak Guest House,guest_house,,5,,,Ohrid,Охрид,6000,,,8,outside,,yes,no
+142,1683,41.1119258,20.8110564,Вила Лука,guest_house,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+143,1684,41.1070136,20.8152723,Hotel International,hotel,,5,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+144,1685,41.1131632,20.7970662,Villa Lara,apartment,,1,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+145,1686,41.1134447,20.7958948,Villa Marto,apartment,,2,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+146,1687,41.1138784,20.7980753,Airbnb,apartment,,5,,,Ohrid,Охрид,6000,,,,outside,,no,no
+147,1688,41.1073783,20.8081499,Hotel Villa Jordan,hotel,http://villa-jordan-mk.book.direct/,1,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+148,1689,41.1173197,20.8138456,Villa Ohrid Anastasia,guest_house,,3,,,Ohrid,Охрид,6000,,,396,outside,,yes,no
+149,1690,41.1059047,20.8088539,Апартман Николина,apartment,,4,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+150,1691,41.1124,20.7946683,Jovanovic Guest House,guest_house,,4,,,Ohrid,Охрид,6000,,,5,outside,2,yes,yes
+151,1692,41.1128406,20.813958,Villa Emilija,guest_house,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+152,1693,41.0900379,20.7990804,Hotel Park,hotel,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+153,1694,41.1170005,20.8088839,Hostel Veronika,hotel,,3,,,Ohrid,Охрид,6000,,,,separated,,no,no
+154,1695,41.1137277,20.7977018,Bochar Hostel,hostel,,3,,,Ohrid,Охрид,6000,,,92,separated,,yes,no
+155,1696,41.1074189,20.8079165,Смакоски,guest_house,,4,,,Ohrid,Охрид,6000,,,96,isolated,,yes,no
+156,1697,41.1074146,20.8073612,Villa Denarius,hotel,,3,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+157,1698,41.1082348,20.8064785,Жика,guest_house,,4,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+158,1700,41.108673,20.8092556,Дудан,guest_house,,2,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+159,1701,41.1132292,20.7951271,Apartment Ain,guest_house,,5,,,Ohrid,Охрид,6000,,,10,outside,,yes,no
+160,1702,41.1181085,20.7997644,Montenegrin Inn,hotel,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+161,1704,41.1237285,20.7887576,TA&TI,guest_house,,2,,,Ohrid,Охрид,6000,,,99 A2,outside,,yes,no
+162,1705,41.1213876,20.8007499,Вила Арсови,guest_house,,1,,,Ohrid,Охрид,6000,,,120a,separated,,yes,no
+163,1706,41.1167879,20.7968031,Center hostel,apartment,,3,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+164,1707,41.1148214,20.799667,Old Town Hostel,hostel,,3,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+165,1709,41.1103782,20.8080677,Breeze Dream Apartment,guest_house,,5,,,Ohrid,Охрид,6000,,,,isolated,,yes,no
+166,1710,41.1099389,20.8079597,Breeze Dream Apartment,guest_house,,3,,,Ohrid,Охрид,6000,,,,isolated,,no,no
+167,1712,41.109198,20.8097851,KARIA Apartments,guest_house,,1,,+38970300188,Ohrid,Охрид,6000,,,54,outside,,yes,no
+168,1713,41.1218586,20.7943777,Hotel Flamengo,hotel,,5,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+169,1715,41.1191737,20.813904,House Kostoski,apartment,,2,,,Ohrid,Охрид,6000,,,5,separated,,yes,no
+170,1716,41.1174368,20.8014938,Sky Corner,hotel,,3,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+171,1717,41.109396,20.8113131,Art B&B,guest_house,,4,,,Ohrid,Охрид,6000,,,,isolated,,yes,no
+172,1719,41.1278422,20.8029354,Vila Lovec Ohrid,hotel,,4,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+173,1720,41.1109682,20.8069062,Bula matej,hostel,,3,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+174,1721,41.1131079,20.8121636,Teodora,apartment,,2,,+38970800631,Ohrid,Охрид,6000,,,,separated,,yes,no
+175,1722,41.1154855,20.812807,Arena,hostel,,2,,,Ohrid,Охрид,6000,,,,outside,,no,yes
+176,1723,41.1114221,20.8072371,Relax,apartment,,4,,,Ohrid,Охрид,6000,,,,isolated,,yes,no
+177,1726,41.1122995,20.7984298,Villa cun,hotel,,2,,,Ohrid,Охрид,6000,,,,outside,,yes,yes
+178,1727,41.1116433,20.806372,Laguna,apartment,,3,,+38975371647,Ohrid,Охрид,6000,,,,outside,,no,no
+179,1728,41.1144885,20.7948983,St. Dimitrij,apartment,,4,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+180,1729,41.1142862,20.7998194,Central Palace Villa,hotel,,2,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+181,1730,41.1222239,20.8091091,Village,hotel,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+182,1731,41.114856,20.8065821,Boulevard,apartment,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,yes
+183,1733,41.1070035,20.8095464,Venco,apartment,,5,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+184,1734,41.107422,20.8095668,Diplomat,hotel,,5,,,Ohrid,Охрид,6000,,,,outside,,no,yes
+185,1736,41.108265,20.8064014,Villa maki,apartment,,3,,,Ohrid,Охрид,6000,,,,isolated,,yes,no
+186,1737,41.1174659,20.795174,Sara Ga,apartment,,4,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+187,1738,41.108465,20.8113417,Vila Niko,hotel,,3,,+38946260043,Ohrid,Охрид,6000,,,,outside,,yes,no
+188,1740,41.1250537,20.7712139,Green Space Hotel,hotel,,2,,075344780,Ohrid,Охрид,6000,,,389,separated,,yes,no
+189,1743,41.1232873,20.8128669,Fero metal Helios,apartment,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,yes
+190,1744,41.126292,20.8056627,Karmen Helios,apartment,,3,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+191,1745,41.1133302,20.8098928,mravka helios,apartment,,2,,,Ohrid,Охрид,6000,,,,isolated,,yes,no
+192,1746,41.1137398,20.8079764,Suna Helios,apartment,,1,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+193,1747,41.1128514,20.7940292,Villa Varosh,hotel,www.villavarsoh.mk,5,contact@villavarosh.mk,+38970258985,Ohrid,Охрид,6000,,,15A,outside,8,yes,no
+194,1749,41.1222715,20.7740558,Далјан,hotel,,4,,,Ohrid,Охрид,6000,,,,separated,,no,no
+195,1750,41.1123019,20.798122,Вила Коста Охрид,hotel,,4,,,Ohrid,Охрид,6000,,,,outside,,yes,yes
+196,1751,41.084697,20.7972458,Хотел Инекс Горица,hotel,,2,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+197,1752,41.1122203,20.7980025,Хотел Алекандрија,hotel,,4,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+198,1756,41.1211612,20.8009152,Krstanoski,guest_house,,3,,,Ohrid,Охрид,6000,,,116e,separated,,yes,no
+199,1759,41.1160305,20.7998936,Denicia,apartment,,3,,,Ohrid,Охрид,6000,,,,separated,,yes,no
+200,1760,41.1120589,20.8032726,Grand Hotel Palace,hotel,,5,,,Ohrid,Охрид,6000,,,,outside,,yes,no
+201,1762,41.1097513,20.8050081,Villa dea,apartment,,5,,,Ohrid,Охрид,6000,,,,isolated,,yes,no
+202,1763,41.1152233,20.7989664,Villa bella,hostel,http://www.villabella.com.mk,1,,,Ohrid,Охрид,6000,,,,outside,,no,no
+203,1764,41.1097127,20.805433,Penelopa,apartment,,1,,,Ohrid,Охрид,6000,,,,outside,,no,no
+204,1765,41.1123592,20.8147467,DEMETRA Apartments,apartment,,1,97dimitrieska@gmail.com,,Ohrid,Охрид,6000,,,24,isolated,3,yes,customers
+205,1766,41.1077621,20.8080426,Celus,apartment,,3,,+38970352138,Ohrid,Охрид,6000,,,93,outside,,yes,no
+206,1767,41.3325976,21.5550545,Салида,hotel,https://www.hotelsalida.com.mk/,5,contact@hotelsalida.com.mk,+389(0)48400333,Prilep,Прилеп,7500,,,,outside,,yes,no
+207,1768,41.346345,21.5543245,Атлас,hotel,http://www.atlasinvest.com.mk,3,,+38948550700;+38948550702,Prilep,Прилеп,7500,,,15,isolated,,yes,no
+208,1769,41.4396276,22.6418073,Hotel Tiveriopol,hotel,,5,,,Strumica,Струмица,2400,,,,separated,,yes,no
+209,1770,41.436015,22.6431437,Хотел Илинден,hotel,,1,,,Strumica,Струмица,2400,,,,outside,,yes,no
+210,1771,41.4368416,22.6379904,Хотел Централ,hotel,,2,,,Strumica,Струмица,2400,,,,outside,,no,no
+211,1773,41.4417498,22.6379903,golf kurcenje,apartment,,1,,,Strumica,Струмица,2400,,,,outside,,yes,no
+212,1775,41.4512932,22.6471258,Hotel Eterno,hotel,,4,,,Strumica,Струмица,2400,,,,outside,,yes,no
+213,1776,41.9939913,21.0276195,Петрол Компани,hotel,,5,,+38944378100,Tetovo,Тетово,1200,,,,isolated,,yes,yes
+214,1777,42.0078524,20.9793686,Dare promet Helios,apartment,,2,,,Tetovo,Тетово,1200,,,,isolated,,yes,no
+215,1778,42.005877,20.9692186,Aka Boja Helios,apartment,,2,,,Tetovo,Тетово,1200,,,,outside,,yes,yes
+216,1779,42.0117514,20.9698559,Standox 2000 Helios,apartment,,4,,,Tetovo,Тетово,1200,,,,separated,,no,no
+217,1780,42.0101572,20.9617237,tepisoni,apartment,,1,,,Tetovo,Тетово,1200,,,,separated,,yes,no
+218,1782,41.1781482,20.6785228,Хотел Београд,hotel,,3,,,Struga,Струга,6330,,,Kej 8-mi noemvri,outside,,yes,yes
+219,1783,41.178763,20.6791191,Vila Perla,hotel,,3,,,Struga,Струга,6330,,,,outside,,yes,yes
+220,1784,41.179539,20.6790775,Hotel Arti,hotel,,4,,,Struga,Струга,6330,,,,isolated,,yes,yes
+221,1785,41.1789398,20.6781683,Jovanoski Apartments,guest_house,,3,,,Struga,Струга,6330,,,,isolated,,yes,no
+222,1786,41.1746819,20.6721254,Marko apartments,apartment,,3,,,Struga,Струга,6330,,,,outside,,yes,no
+223,1787,41.1789002,20.6781903,jovanoski apartment,apartment,,4,,,Struga,Струга,6330,,,,separated,,yes,no
+224,1788,41.1741883,20.6712235,EXCLUSIVE Apartments Struga,apartment,,2,,,Struga,Струга,6330,,,,outside,,yes,no
+225,1791,41.1775853,20.675587,Freya,hotel,,4,,,Struga,Струга,6330,,,,isolated,,no,no
+226,1792,41.1774983,20.6768676,Villa Albi,apartment,,2,,,Struga,Струга,6330,,,,outside,,yes,yes
