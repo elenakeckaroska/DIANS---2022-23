@@ -1,0 +1,66 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "id": 4496493417,
+      "lat": 41.9939913,
+      "lon": 21.0276195,
+      "tags": {
+        "name": "Петрол Компани",
+        "name:en": "Hotel Petrol Company",
+        "phone": "+389 44 378 100",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7058905587,
+      "lat": 42.0078524,
+      "lon": 20.9793686,
+      "tags": {
+        "name": "Dare promet Helios",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7058905588,
+      "lat": 42.005877,
+      "lon": 20.9692186,
+      "tags": {
+        "name": "Aka Boja Helios",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7058905785,
+      "lat": 42.0117514,
+      "lon": 20.9698559,
+      "tags": {
+        "name": "Standox 2000 Helios",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7086425885,
+      "lat": 42.0101572,
+      "lon": 20.9617237,
+      "tags": {
+        "name": "tepisoni",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7306259885,
+      "lat": 42.0109329,
+      "lon": 20.9732695,
+      "tags": {
+        "name:en": "premium eski helios",
+        "tourism": "apartment"
+      }
+    }
+  ]
+}

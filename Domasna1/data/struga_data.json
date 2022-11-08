@@ -1,0 +1,130 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "id": 496160455,
+      "lat": 41.1781482,
+      "lon": 20.6785228,
+      "tags": {
+        "addr:city": "Струга",
+        "addr:housenumber": "Kej 8-mi noemvri",
+        "addr:postcode": "6330",
+        "addr:street": "8. Ноември",
+        "int_name": "Hotel BEOGRAD",
+        "internet_access": "wlan",
+        "internet_access:fee": "yes",
+        "name": "Хотел Београд",
+        "name:en": "Hotel Beograd",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4307731896,
+      "lat": 41.178763,
+      "lon": 20.6791191,
+      "tags": {
+        "addr:street": "KEJ 8 НОЕМВРИ",
+        "internet_access": "wlan",
+        "name": "Vila Perla",
+        "opening_hours": "24/7",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5834873232,
+      "lat": 41.179539,
+      "lon": 20.6790775,
+      "tags": {
+        "name": "Hotel Arti",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5931104187,
+      "lat": 41.1789398,
+      "lon": 20.6781683,
+      "tags": {
+        "name": "Jovanoski Apartments",
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5957861786,
+      "lat": 41.1746819,
+      "lon": 20.6721254,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "Marko apartments",
+        "name:mk": "Marko apartments",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6260391285,
+      "lat": 41.1789002,
+      "lon": 20.6781903,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "jovanoski apartment",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6355124130,
+      "lat": 41.1741883,
+      "lon": 20.6712235,
+      "tags": {
+        "addr:street": "Veljko Vlahovich",
+        "name": "EXCLUSIVE Apartments Struga",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7464108785,
+      "lat": 41.1771785,
+      "lon": 20.6730186,
+      "tags": {
+        "name:en": "bekim bau helios",
+        "tourism": "apartment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9160068918,
+      "lat": 41.176483,
+      "lon": 20.6759338,
+      "tags": {
+        "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10046674016,
+      "lat": 41.1775853,
+      "lon": 20.675587,
+      "tags": {
+        "name": "Freya",
+        "stars": "4",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10049627340,
+      "lat": 41.1774983,
+      "lon": 20.6768676,
+      "tags": {
+        "name": "Villa Albi",
+        "tourism": "apartment"
+      }
+    }
+  ]
+}
