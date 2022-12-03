@@ -1,7 +1,7 @@
 import React from 'react';
 import AccommodationCard from "./AccommodationCard";
 
-const AccommodationList = ({accommodations}) => {
+const AccommodationList = ({accommodations, setSelected }) => {
 
     const renderAccommodations = accommodations.map((acc) => {
         return (
@@ -11,12 +11,18 @@ const AccommodationList = ({accommodations}) => {
                 name={acc.name}
                 website={acc.website}
                 stars={acc.stars}
+                lat={acc.latitude}
+                lon={acc.longitude}
+                setSelected={setSelected}
             />
         );
-    })
+    });
+
+    
     return (
         <div className="ui cards">
-            {renderAccommodations}
+            {accommodations.length > 0 ? renderAccommodations : 
+            <h3>Не се пронајдени сместувачки капацитети. Обидете се повторно!</h3>}
         </div>
     );
 }
