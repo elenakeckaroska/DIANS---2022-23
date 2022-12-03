@@ -38,7 +38,7 @@ const AccommodationInfo = () => {
                         {accommodation.street ? <p>Улица: {accommodation.street}</p> : null}
                         {accommodation.house_number ? <p>Број: {accommodation.house_number}</p> : null}
                         {accommodation.rooms ? <p>Број на соби: {accommodation.rooms}</p> : null}
-                        {accommodation.internet_access_fee ? <p>Цена на интернет пристап: {accommodation.internet_access_fee}</p> : null}
+                        {accommodation.internet_access_fee ? <p>Цена на интернет пристап: {accommodation.internet_access_fee ? "Се плаќа" : "Бесплатно"}</p> : null}
                     </div>
                     <div className="extra">
                         {accommodation.smoking ? <div className="ui label">Дозволено пушење</div> : null}
