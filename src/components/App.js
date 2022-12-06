@@ -5,6 +5,7 @@ import Login from './Login';
 import Register from './Register';
 import AccommodationInfo from './AccommodationInfo';
 import Header from './Header';
+import Favourites from './Favourites';
 import { ContextProvider } from '../contexts/Context';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
                     <Route path="/login" element={<Login setUser={setUser} />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/accommodation/:id" element={<AccommodationInfo />} />
+                    <Route path="/:username/favourites" element={<Favourites />} />
                 </Routes>
             </BrowserRouter>
         </ContextProvider>

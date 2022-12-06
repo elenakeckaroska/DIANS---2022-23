@@ -17,7 +17,6 @@
 .ui.cards {
     width: 30%;
     padding: 2%;
-    flex-direction: column;
     margin: 0;
 }
 
@@ -72,4 +71,20 @@
 
 .ui.form.login-register-form {
     width: 30%;
+}
+
+.ui.cards.favourites-list {
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.overflow {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
 }

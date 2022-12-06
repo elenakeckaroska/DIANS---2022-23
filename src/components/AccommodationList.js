@@ -24,7 +24,7 @@ const AccommodationList = ({ setSelected, user }) => {
     });
     
     return (
-        <div className="ui cards">
+        <div className="ui cards overflow">
             {accommodations.length > 0 ? renderAccommodations : 
             <h3>Не се пронајдени сместувачки капацитети. Обидете се повторно!</h3>}
         </div>

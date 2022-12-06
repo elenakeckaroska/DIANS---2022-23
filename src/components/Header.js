@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate  } from 'react-router-dom';
 import { Context } from '../contexts/Context';
 import axios from 'axios';
 
 const Header = ({ user, setUser }) => {
 
     const { accommodations, setAccommodations } = useContext(Context);
+    const navigate = useNavigate();
 
     const handleClick = (event) => {
         event.preventDefault();
@@ -16,6 +17,7 @@ const Header = ({ user, setUser }) => {
         axios.post('http://localhost:8080/logout')
                 .then((response) => {
                     setUser(null);
+                    navigate('/');
                 })
                 .catch((error) => {
                     console.log(error);
@@ -28,6 +30,7 @@ const Header = ({ user, setUser }) => {
             {user ? (
                 <>
                     <div className="item">{user}</div>
+                    <Link className="item" to={`/${user}/favourites`}>Омилени</Link>
                     <a className="item" href="#" onClick={(e) => handleClick(e)}>Одјави се</a>
                 </>
                 ) : (

@@ -34,7 +34,7 @@ const AccommodationInfo = () => {
                         {accommodation.email ? <p>Е-пошта: {accommodation.email}</p> : null}
                         {accommodation.phone ? <p>Телефон: {accommodation.phone}</p> : null}
                         {accommodation.city ? <p>Град: {accommodation.city}</p> : null}
-                        {accommodation.postcode ? <p>Поштенски код: {accommodation.postcode}</p> : null}
+                        {accommodation.postcode ? <p>Поштенски код: {Math.round(accommodation.postcode)}</p> : null}
                         {accommodation.street ? <p>Улица: {accommodation.street}</p> : null}
                         {accommodation.house_number ? <p>Број: {accommodation.house_number}</p> : null}
                         {accommodation.rooms ? <p>Број на соби: {accommodation.rooms}</p> : null}
