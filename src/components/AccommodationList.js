@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import AccommodationCard from "./AccommodationCard";
+import { Context } from '../contexts/Context';
 
-const AccommodationList = ({accommodations, setSelected }) => {
+const AccommodationList = ({ setSelected, user }) => {
+
+    const { accommodations } = useContext(Context);
 
     const renderAccommodations = accommodations.map((acc) => {
         return (
@@ -13,11 +16,12 @@ const AccommodationList = ({accommodations, setSelected }) => {
                 stars={acc.stars}
                 lat={acc.latitude}
                 lon={acc.longitude}
+                favourite={acc.favourite}
                 setSelected={setSelected}
+                user={user}
             />
         );
     });
-
     
     return (
         <div className="ui cards">

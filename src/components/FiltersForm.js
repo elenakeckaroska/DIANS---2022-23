@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { Context } from '../contexts/Context';
 import axios from 'axios';
 import qs from 'qs';
 
@@ -6,10 +7,11 @@ const stars = [5, 4, 3, 2, 1];
 const cities = ['Берово', 'Битола', 'Гевгелија', 'Кавадарци', 
     'Куманово', 'Охрид', 'Прилеп', 'Скопје', 'Струга', 'Струмица', 'Тетово'];
 
-const FiltersForm = ({ setAccommodations }) => {
+const FiltersForm = () => {
 
     const [checkedStars, setCheckedStars] = useState(new Array(stars.length).fill(false));
     const [checkedCities, setCheckedCities] = useState(new Array(cities.length).fill(false));
+    const { setAccommodations } = useContext(Context);
 
     const handleStarsChange = (position) => {
         const updatedCheckedState = checkedStars.map((item, index) => index === position ? !item : item);

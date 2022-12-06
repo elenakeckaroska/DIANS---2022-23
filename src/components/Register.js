@@ -8,7 +8,7 @@ const initialErrors = {
     doesntExistError: "",
 }
 
-const Register = ({ setUser }) => {
+const Register = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [repeatedPassword, setRepeatedPassword] = useState('');
@@ -29,9 +29,8 @@ const Register = ({ setUser }) => {
             const params = new URLSearchParams({ username, password, repeatedPassword, name, surname });
             axios.post('http://localhost:8080/register', params, { headers: {'content-type': 'application/x-www-form-urlencoded'}})
                 .then((response) => {
-                    console.log(response.status);
-                    setUser(username);
-                    navigate('/');
+                    console.log(response);
+                    navigate('/login');
                 })
                 .catch((error) => {
                     setErrors({ errors, doesntExistError: "Внесените информации не се валидни. Обидете се повторно!"});

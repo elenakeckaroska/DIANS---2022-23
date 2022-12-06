@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { Context } from '../contexts/Context';
 import axios from 'axios';
 
 const Header = ({ user, setUser }) => {
 
+    const { accommodations, setAccommodations } = useContext(Context);
+
     const handleClick = (event) => {
         event.preventDefault();
+
+        let resetAccommodations = accommodations.map(d => ({ ...d, favourite: 'false' }));
+        setAccommodations(resetAccommodations);
 
         axios.post('http://localhost:8080/logout')
                 .then((response) => {

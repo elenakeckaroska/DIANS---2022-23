@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Context } from '../contexts/Context';
 import axios from 'axios';
 
 const initialErrors = {
@@ -12,6 +13,7 @@ const Login = ({ setUser }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState(initialErrors);
+    const { accommodations, setAccommodations } = useContext(Context);
     const navigate = useNavigate();
 
     const handleSubmit = (event) => {
@@ -22,8 +24,18 @@ const Login = ({ setUser }) => {
         else {
             const params = new URLSearchParams({ username, password });
             axios.post('http://localhost:8080/login', params, { headers: {'content-type': 'application/x-www-form-urlencoded'}})
-                .then((response) => {
+                .then(({ data }) => {
                     setUser(username);
+                    console.log(data.accommodations);
+                    const newAccommodations = accommodations.map(a => {
+                        if(data.accommodations.filter(e => e.id === a.id).length > 0) {
+                            return { ...a, favourite: 'true' };
+                        }
+
+                        return a;
+                    });
+        
+                    setAccommodations(newAccommodations);
                     navigate('/');
                 })
                 .catch((error) => {

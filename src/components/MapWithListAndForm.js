@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 import Map from './Map';
 import AccommodationList from "./AccommodationList";
 import FiltersForm from './FiltersForm';
+
 
 import 'leaflet/dist/leaflet.css';
 import '../styles/App.css';
@@ -13,26 +13,15 @@ import '../styles/App.css';
 // 'internet_access', 'internet_access_fee', 'municipality']
 
 
-const MapWithListAndForm = () => {
+const MapWithListAndForm = ({ user }) => {
 
-    const [accommodations, setAccommodations] = useState([]);
     const [selected, setSelected] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const { data } = await axios.get('http://localhost:8080/accommodation');
-            
-            setAccommodations(data);
-        }
-
-        fetchData();
-    }, []);
 
     return (
         <div className="map-list-container">
-            <FiltersForm setAccommodations={setAccommodations} />
-            <AccommodationList accommodations={accommodations} setSelected={setSelected} />
-            <Map accommodations={accommodations} selectedProp={selected} />
+            <FiltersForm />
+            <AccommodationList setSelected={setSelected} user={user} />
+            <Map selectedProp={selected} />
         </div>
     );
 };
