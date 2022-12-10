@@ -9,7 +9,7 @@ const Map = ({ selectedProp }) => {
     const numAccommodations = accommodations.length;    
     const [markerRefs, setMarkerRefs] = useState([]);
 
-    const defaultCenter = [41.99, 21.42];
+    const defaultCenter = [41.546886, 21.724966];
 
     useEffect(() => {
         setMarkerRefs(new Array(numAccommodations).fill(null).map(() => createRef()));
@@ -53,7 +53,7 @@ const Map = ({ selectedProp }) => {
     });
 
     return (
-        <MapContainer center={defaultCenter} zoom={13}>
+        <MapContainer center={defaultCenter} zoom={8.5}>
             <SetCenterAndTriggerPopup 
                 center={selectedProp ? selectedProp.center : defaultCenter} 
                 id={selectedProp ? selectedProp.id : null}
