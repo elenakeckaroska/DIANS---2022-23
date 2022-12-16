@@ -31,11 +31,14 @@ public class AccommodationServiceImpl implements AccommodationService {
 
 
     @Override
-    public List<Accommodation> getAccommodations(List<String> cities, List<String> stars) {
+    public List<Accommodation> getAccommodations(List<String> cities, List<String> stars,
+                                                 List<String> propertyType, List<String> internetAccess) {
 
         return accommodationRepository.findAll().stream()
                 .filter(a -> cities.contains(a.getCity()) || cities.get(0).equals("-1"))
                 .filter(a -> stars.contains(a.getStars().split("\\.")[0]) || stars.get(0).equals("-1"))
+                .filter(a -> propertyType.contains(a.getProperty_type()) || propertyType.get(0).equals("-1"))
+                .filter(a -> internetAccess.contains(a.getInternet_access()) || internetAccess.get(0).equals("-1"))
                 .collect(Collectors.toList());
 
     }

@@ -43,11 +43,9 @@ public class AccommodationController {
         }
         List<String> cities = multiValueMap.getOrDefault("city",List.of("-1"));
         List<String> stars = multiValueMap.getOrDefault("stars",List.of("-1"));
-        return accommodationService.getAccommodations(cities, stars);
+        List<String> propertyType = multiValueMap.getOrDefault("property_type",List.of("-1"));
+        List<String> internetAccess = multiValueMap.getOrDefault("internet_access",List.of("-1"));
+        return accommodationService.getAccommodations(cities, stars, propertyType, internetAccess);
     }
-
-
-
-
 
 }
