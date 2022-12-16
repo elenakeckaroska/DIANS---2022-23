@@ -12,6 +12,7 @@ public interface AccommodationService {
     Optional<Accommodation> findById(Long id);
 
 
-    List<Accommodation> getAccommodations(List<String> cities, List<String> stars, List<String> propertyType, List<String> internetAccess)
-            ;
+    List<Accommodation> getAccommodations(List<String> cities, List<String> stars, List<String> propertyType, List<String> internetAccess);
+
+    List<Accommodation> findByAccommodationName(String keyword);
 }

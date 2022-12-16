@@ -48,4 +48,12 @@ public class AccommodationController {
         return accommodationService.getAccommodations(cities, stars, propertyType, internetAccess);
     }
 
+    @GetMapping("/search")
+    public List<Accommodation> searchByNameOfAccommodation(@RequestParam(required = false) String keyword) {
+        if (keyword == null || keyword.equals("")) {
+            return accommodationService.findAll();
+        }
+        return accommodationService.findByAccommodationName(keyword);
+    }
+
 }

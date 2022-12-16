@@ -42,4 +42,9 @@ public class AccommodationServiceImpl implements AccommodationService {
                 .collect(Collectors.toList());
 
     }
+
+    @Override
+    public List<Accommodation> findByAccommodationName(String keyword) {
+        return accommodationRepository.findByNameContainingIgnoreCase(keyword);
+    }
 }

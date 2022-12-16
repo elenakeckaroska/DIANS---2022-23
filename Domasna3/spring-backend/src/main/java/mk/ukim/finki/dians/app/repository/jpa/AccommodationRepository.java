@@ -10,4 +10,6 @@ import java.util.Optional;
 @Repository
 public interface AccommodationRepository extends JpaRepository<Accommodation,Long> {
 
+    public List<Accommodation> findByNameContainingIgnoreCase(String keyword);
+
 }
