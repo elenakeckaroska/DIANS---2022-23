@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import FavouriteAccommodationList from './FavouriteAccommodationsList';
-
+import AccommodationList from './AccommodationList';
+import { Context } from '../contexts/Context';
 
 const Favourites = () => {
 
-    const [accommodations, setAccommodations] = useState([]);
+    const { userAccommodations, setUserAccommodations } = useContext(Context);
     let { username } = useParams();
     
     useEffect(() => {
@@ -14,22 +14,20 @@ const Favourites = () => {
             let { data } = await axios.post('http://localhost:8080/favorites/show',
                 { username },
                 { headers: {'content-type': 'application/x-www-form-urlencoded'}});
-            const newAccommodations = data.accommodations.map(a => {
-                return { ...a, favourite: 'true'};
-            });
-            setAccommodations(newAccommodations);
+            setUserAccommodations(data.accommodations);
         }
 
         fetchData();
     }, []);
 
-
     return (
-        accommodations && <FavouriteAccommodationList 
-                                favouriteAccommodations={accommodations} 
-                                setFavouriteAccommodations={setAccommodations} 
-                                user={username} 
-                            />
+        <AccommodationList 
+            accommodations={userAccommodations}
+            setSelected={null} 
+            user={username}
+            containerClass='favourites-list'
+            errorMessage='Немате додадено сместувачки капацитети во листата на омилени!'
+        />
     );
 }
 

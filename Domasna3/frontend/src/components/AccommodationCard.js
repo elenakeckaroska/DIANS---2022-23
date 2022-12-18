@@ -33,11 +33,12 @@ const AccommodationCard = ({ accommodation, setSelected, user }) => {
                 <div className="description">
                     {accommodation.stars} <i aria-hidden="true" className="yellow star icon"></i>
                 </div>
+                {setSelected !== null &&
                 <div className="description show-on-map"
                     onClick={() => setSelected({ id: accommodation.id, center: [accommodation.latitude, accommodation.longitude]})}
                 >
                     Прикажи на мапа <i aria-hidden="true" className="blue map marker alternate icon"></i>
-                </div>
+                </div>}
                 <div className="meta">
                     <Link to={`/accommodation/${accommodation.id}`}>
                         Види повеќе...

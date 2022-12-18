@@ -1,23 +1,14 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import AccommodationCard from "./AccommodationCard";
-import { Context } from '../contexts/Context';
 
-const AccommodationList = ({ setSelected, user }) => {
 
-    const { accommodations } = useContext(Context);
+const AccommodationList = ({ accommodations, setSelected, user, containerClass, errorMessage }) => {
 
     const renderAccommodations = accommodations.map((acc) => {
         return (
             <AccommodationCard
                 key={acc.id}
                 accommodation={acc}
-                // id={acc.id}
-                // name={acc.name}
-                // website={acc.website}
-                // stars={acc.stars}
-                // lat={acc.latitude}
-                // lon={acc.longitude}
-                // //favourite={acc.favourite}
                 setSelected={setSelected}
                 user={user}
             />
@@ -25,9 +16,9 @@ const AccommodationList = ({ setSelected, user }) => {
     });
     
     return (
-        <div className="ui cards overflow">
+        <div className={`ui cards ${containerClass}`}>
             {accommodations.length > 0 ? renderAccommodations : 
-            <h3>Не се пронајдени сместувачки капацитети. Обидете се повторно!</h3>}
+            <h3>{errorMessage}</h3>}
         </div>
     );
 }

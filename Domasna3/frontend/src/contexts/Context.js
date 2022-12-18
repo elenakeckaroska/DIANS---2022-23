@@ -11,7 +11,6 @@ export const ContextProvider = ({ children }) => {
     useEffect(() => {
         const fetchData = async () => {
             let { data } = await axios.get('http://localhost:8080/accommodation');
-            // data = data.map(d => ({ ...d, favourite: 'false' }))
             setAccommodations(data);
             setLoading(false);
         }
