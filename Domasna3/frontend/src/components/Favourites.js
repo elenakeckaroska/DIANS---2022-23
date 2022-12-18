@@ -25,7 +25,11 @@ const Favourites = () => {
 
 
     return (
-        accommodations && <FavouriteAccommodationList favouriteAccommodations={accommodations} setFavouriteAccommodations={setAccommodations} user={username} />
+        accommodations && <FavouriteAccommodationList 
+                                favouriteAccommodations={accommodations} 
+                                setFavouriteAccommodations={setAccommodations} 
+                                user={username} 
+                            />
     );
 }
 

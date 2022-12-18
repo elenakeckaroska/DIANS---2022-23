@@ -10,13 +10,14 @@ const AccommodationList = ({ setSelected, user }) => {
         return (
             <AccommodationCard
                 key={acc.id}
-                id={acc.id}
-                name={acc.name}
-                website={acc.website}
-                stars={acc.stars}
-                lat={acc.latitude}
-                lon={acc.longitude}
-                //favourite={acc.favourite}
+                accommodation={acc}
+                // id={acc.id}
+                // name={acc.name}
+                // website={acc.website}
+                // stars={acc.stars}
+                // lat={acc.latitude}
+                // lon={acc.longitude}
+                // //favourite={acc.favourite}
                 setSelected={setSelected}
                 user={user}
             />
