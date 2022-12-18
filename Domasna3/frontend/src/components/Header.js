@@ -5,18 +5,22 @@ import axios from 'axios';
 
 const Header = ({ user, setUser }) => {
 
-    const { accommodations, setAccommodations } = useContext(Context);
+    const { accommodations, setAccommodations, userAccommodations, setUserAccommodations } = useContext(Context);
     const navigate = useNavigate();
 
     const handleClick = (event) => {
         event.preventDefault();
 
-        let resetAccommodations = accommodations.map(d => ({ ...d, favourite: 'false' }));
-        setAccommodations(resetAccommodations);
+        // let resetAccommodations = accommodations.map(d => ({ ...d, favourite: 'false' }));
+        // setAccommodations(resetAccommodations);
 
         axios.post('http://localhost:8080/logout')
                 .then((response) => {
                     setUser(null);
+                    setUserAccommodations([]);
+
+                    console.log(accommodations);
+                    console.log(userAccommodations);
                     navigate('/');
                 })
                 .catch((error) => {

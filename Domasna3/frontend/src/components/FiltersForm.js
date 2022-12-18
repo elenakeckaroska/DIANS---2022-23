@@ -44,7 +44,7 @@ const FiltersForm = () => {
               stars: starsParams
             }
         });
-        data = data.map(d => ({ ...d, favourite: 'false' }))
+        // data = data.map(d => ({ ...d, favourite: 'false' }))
         setAccommodations(data);
     }
 

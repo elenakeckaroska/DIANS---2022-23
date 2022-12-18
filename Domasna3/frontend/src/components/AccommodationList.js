@@ -16,7 +16,7 @@ const AccommodationList = ({ setSelected, user }) => {
                 stars={acc.stars}
                 lat={acc.latitude}
                 lon={acc.longitude}
-                favourite={acc.favourite}
+                //favourite={acc.favourite}
                 setSelected={setSelected}
                 user={user}
             />

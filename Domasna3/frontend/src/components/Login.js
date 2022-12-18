@@ -13,7 +13,7 @@ const Login = ({ setUser }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState(initialErrors);
-    const { accommodations, setAccommodations } = useContext(Context);
+    const { accommodations, setAccommodations, userAccommodations, setUserAccommodations } = useContext(Context);
     const navigate = useNavigate();
 
     const handleSubmit = (event) => {
@@ -26,19 +26,19 @@ const Login = ({ setUser }) => {
             axios.post('http://localhost:8080/login', params, { headers: {'content-type': 'application/x-www-form-urlencoded'}})
                 .then(({ data }) => {
                     setUser(username);
-                    console.log(data.accommodations);
-                    if(data.accommodations.length > 0) {
-                        const newAccommodations = accommodations.map(a => {
-                            if(data.accommodations.filter(e => e.id === a.id).length > 0) {
-                                return { ...a, favourite: 'true' };
-                            }
+                    // if(data.accommodations.length > 0) {
+                    //     const newAccommodations = accommodations.map(a => {
+                    //         if(data.accommodations.filter(e => e.id === a.id).length > 0) {
+                    //             return { ...a, favourite: 'true' };
+                    //         }
 
-                            return a;
-                        });
+                    //         return a;
+                    //     });
             
-                        setAccommodations(newAccommodations);
-                    }
-                    console.log(accommodations);
+                    //     setAccommodations(newAccommodations);
+                    // }
+                    setUserAccommodations(data.accommodations);
+
                     navigate('/');
                 })
                 .catch((error) => {
