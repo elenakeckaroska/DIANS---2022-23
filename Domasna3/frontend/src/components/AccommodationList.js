@@ -2,7 +2,7 @@ import React from 'react';
 import AccommodationCard from "./AccommodationCard";
 
 
-const AccommodationList = ({ accommodations, setSelected, user, containerClass, errorMessage }) => {
+const AccommodationList = ({ accommodations, setSelected, user, containerClass, errorMessage, children }) => {
 
     const renderAccommodations = accommodations.map((acc) => {
         return (
@@ -17,6 +17,7 @@ const AccommodationList = ({ accommodations, setSelected, user, containerClass, 
     
     return (
         <div className={`ui cards ${containerClass}`}>
+            {children}
             {accommodations.length > 0 ? renderAccommodations : 
             <h3>{errorMessage}</h3>}
         </div>
