@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 
 import '../styles/Dropdown.css';
 
-const Dropdown = ({ label, options, selected, onSelectedChange }) => {
+const Dropdown = ({ options, selected, onSelectedChange }) => {
     const [open, setOpen] = useState(false);
 
     const ref = useRef();
@@ -40,11 +40,10 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
     return (
         <div ref={ref} className="dropdown">
             <div>
-                <label className="dropdown-label">{label}</label>
                 <div className="dropdown-field" onClick={() => setOpen(!open)}>
                     <div className="dropdown-selected">
-                        {selected.label}
-                        <i className="fas fa-caret-down"></i>
+                        <span>{selected.label}</span>
+                        <i aria-hidden="true" className="chevron down icon"></i>
                     </div>
                     <div className={`${!open ? 'dropdown-hide' : ''}`}>
                         {renderedOptions}             

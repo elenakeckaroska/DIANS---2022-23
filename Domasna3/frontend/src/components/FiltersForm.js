@@ -15,8 +15,8 @@ const propertyTypes = [
 ];
 const options = [
     { label: '---', value: '/'},
-    { label: 'Според име растечки', value: 'asc'},
-    { label: 'Според име опаѓачки', value: 'desc'}
+    { label: 'Име растечки', value: 'asc'},
+    { label: 'Име опаѓачки', value: 'desc'}
 ];
 
 const FiltersForm = () => {
@@ -130,8 +130,8 @@ const FiltersForm = () => {
     return (
         <form className="ui form overflow">
             <div className="grouped fields">
+                <h3>Сортирај според</h3>
                 <Dropdown 
-                    label='Сортирај' 
                     options={options} 
                     selected={selectedOption}
                     onSelectedChange={setSelectedOption}

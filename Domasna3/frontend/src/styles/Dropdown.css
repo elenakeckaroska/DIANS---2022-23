@@ -1,20 +1,31 @@
-.dropdown-label {
-    font-weight: 600;
+/* .grouped.fields {
+    position: relative;
+} */
+
+.dropdown-selected span {
+   padding-left: 0.4em
 }
 
- /*might be temporary*/
 .dropdown {
-    color: #4A4A4A;
+    color:rgba(0,0,0,.6);
+    font-weight: bold;
     cursor: pointer;
+    width: inherit;
 }
 
 .dropdown-field {
-    background-color: #AABFBB;
+    padding: 0.5em 0;
+    background-color: #e0e1e2;
+    border-radius: 8%;
 }
 
-.fas.fa-caret-down {
+.chevron.down.icon {
     float: right;
-    margin-right: 0.4em;
+    padding: 0;
+    border-radius: inherit;
+    width: 20%;
+    margin: 0;
+    height: auto;
 }
 
 .dropdown-hide {
@@ -23,6 +34,6 @@
 
 .dropdown-item {
     margin-top: 0.1em;
-    padding: 0.10em;
+    padding: 0.4em;
     border-top: 1px solid #F4F4F4;
 }
