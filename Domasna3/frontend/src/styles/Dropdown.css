@@ -1,0 +1,28 @@
+.dropdown-label {
+    font-weight: 600;
+}
+
+ /*might be temporary*/
+.dropdown {
+    color: #4A4A4A;
+    cursor: pointer;
+}
+
+.dropdown-field {
+    background-color: #AABFBB;
+}
+
+.fas.fa-caret-down {
+    float: right;
+    margin-right: 0.4em;
+}
+
+.dropdown-hide {
+    display: none;
+}
+
+.dropdown-item {
+    margin-top: 0.1em;
+    padding: 0.10em;
+    border-top: 1px solid #F4F4F4;
+}

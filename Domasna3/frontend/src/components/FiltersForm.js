@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Context } from '../contexts/Context';
+import Dropdown from './Dropdown';
 import axios from 'axios';
 import qs from 'qs';
 
@@ -12,6 +13,11 @@ const propertyTypes = [
     { name: 'hostel', value: 'Хостели'},
     { name: 'hotel', value: 'Хотели'}
 ];
+const options = [
+    { label: '---', value: '/'},
+    { label: 'Според име растечки', value: 'asc'},
+    { label: 'Според име опаѓачки', value: 'desc'}
+];
 
 const FiltersForm = () => {
 
@@ -19,6 +25,7 @@ const FiltersForm = () => {
     const [checkedCities, setCheckedCities] = useState(new Array(cities.length).fill(false));
     const [checkedPropertyTypes, setCheckedPropertyTypes] = useState(new Array(propertyTypes.length).fill(false))
     const [checkedInternetAccess, setCheckedInternetAcces] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(options[0]);
     const { setAccommodations } = useContext(Context);
 
     const handleStarsChange = (position) => {
@@ -47,7 +54,8 @@ const FiltersForm = () => {
         const propertyTypesParams = propertyTypes.map((pt, i) => checkedPropertyTypes[i] ? pt.name : undefined);
         // With this logic if the internet access checkbox is not selected we treat it as if
         // the user doesn't want internet access not as if he doesn't care
-        const internetAccessParam = checkedInternetAccess ? 'yes' : 'no';
+        const internetAccessParam = checkedInternetAccess ? 'yes' : undefined;
+        const sortingDirectionParam = selectedOption.label === '---' ? undefined : selectedOption.value;
 
         const axiosInstance = axios.create({
             paramsSerializer: {
@@ -61,7 +69,8 @@ const FiltersForm = () => {
               city: cityParams,
               stars: starsParams,
               internet_access: internetAccessParam,
-              property_type: propertyTypesParams
+              property_type: propertyTypesParams,
+              sortValue: sortingDirectionParam
             }
         });
         setAccommodations(data);
@@ -121,6 +130,13 @@ const FiltersForm = () => {
     return (
         <form className="ui form overflow">
             <div className="grouped fields">
+                <Dropdown 
+                    label='Сортирај' 
+                    options={options} 
+                    selected={selectedOption}
+                    onSelectedChange={setSelectedOption}
+                />
+                <div className="ui divider"></div>
                 <h3>Ѕвезди</h3>
                 {renderStarsInputs}
                 <div className="ui divider"></div>
