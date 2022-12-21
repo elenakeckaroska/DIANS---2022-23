@@ -1,11 +1,12 @@
-import React, { useState, useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useContext, useEffect } from 'react';
+import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import { Context } from '../contexts/Context';
 import axios from 'axios';
 
 const initialErrors = {
     emptyError: "",
     doesntExistError: "",
+    tokenExpiredError: ""
 }
 
 const Login = () => {
@@ -13,37 +14,45 @@ const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState(initialErrors);
-    const { setUserAccommodations, setUser } = useContext(Context);
+    const { setUserAccommodations, setUser, setToken } = useContext(Context);
     const navigate = useNavigate();
+    let [searchParams, setSearchParams] = useSearchParams();
 
-    const handleSubmit = (event) => {
+    useEffect(() => {
+        setErrors({ ...errors, tokenExpiredError: searchParams.get("error") });
+    }, []);
+
+    console.log(errors);
+
+    const saveTokenAndUserInLocalStorage = (user, token) => {
+        localStorage.setItem("jwt", token);
+        localStorage.setItem("user", user);
+    } 
+
+    const handleSubmit = async (event) => {
         event.preventDefault();
         if (!username || !password) {
             setErrors({ ...errors, emptyError: "Ве молиме пополнете ги сите полиња!"});
         }
         else {
             const params = new URLSearchParams({ username, password });
-            axios.post('http://localhost:8080/login', params, { headers: {'content-type': 'application/x-www-form-urlencoded'}})
-                .then(({ data }) => {
-                    setUser(username);
-                    // if(data.accommodations.length > 0) {
-                    //     const newAccommodations = accommodations.map(a => {
-                    //         if(data.accommodations.filter(e => e.id === a.id).length > 0) {
-                    //             return { ...a, favourite: 'true' };
-                    //         }
+            let { data } = await axios.post('http://localhost:8080/authenticate', params, { headers: {'content-type': 'application/x-www-form-urlencoded'}});
+            setUser(username);
+            setToken(data.jwt);
 
-                    //         return a;
-                    //     });
-            
-                    //     setAccommodations(newAccommodations);
-                    // }
-                    setUserAccommodations(data.accommodations);
+            saveTokenAndUserInLocalStorage(username, data.jwt);
 
-                    navigate('/');
-                })
-                .catch((error) => {
-                    setErrors({ errors, doesntExistError: "Внесените информации не се валидни. Обидете се повторно!"});
-                });
+            const headersConfig = {
+                headers: {
+                   Authorization: "Bearer " + data.jwt
+                }
+            };
+
+            ({ data } = await axios.get('http://localhost:8080/favorites/show', headersConfig));
+
+            setUserAccommodations(data.accommodations);
+
+            navigate('/');
         }
         
     }
@@ -69,6 +78,7 @@ const Login = () => {
                     />
                     {errors.emptyError && <div className="ui red basic label">{errors.emptyError}</div>}
                     {errors.doesntExistError && <div className="ui red basic label">{errors.doesntExistError}</div>}
+                    {errors.tokenExpiredError && <div className="ui red basic label">{errors.tokenExpiredError}</div>}
                 </div>
                 <button className="ui primary button" type="submit" onClick={(e) => handleSubmit(e)} >Најава</button>
                 <Link to="/register" className="ui button">Регистрирај се</Link>

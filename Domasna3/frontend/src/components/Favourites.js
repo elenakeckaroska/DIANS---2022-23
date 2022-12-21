@@ -6,15 +6,24 @@ import { Context } from '../contexts/Context';
 
 const Favourites = () => {
 
-    const { userAccommodations, setUserAccommodations } = useContext(Context);
+    const { userAccommodations, setUserAccommodations, token } = useContext(Context);
+    const navigate = useNavigate();
     let { username } = useParams();
     
     useEffect(() => {
         const fetchData = async () => {
-            let { data } = await axios.post('http://localhost:8080/favorites/show',
-                { username },
-                { headers: {'content-type': 'application/x-www-form-urlencoded'}});
-            setUserAccommodations(data.accommodations);
+            const headersConfig = {
+                headers: {
+                   Authorization: "Bearer " + token
+                }
+            };
+
+            try {
+                let { data } = await axios.get('http://localhost:8080/favorites/show', headersConfig);
+                setUserAccommodations(data.accommodations);
+            } catch(err) {
+                navigate('/login?error=' + 'Автентикацискиот токен е истечен. Ве молиме логирајте се повторно.');
+            }            
         }
 
         fetchData();

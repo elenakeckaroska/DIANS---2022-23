@@ -5,24 +5,33 @@ import axios from 'axios';
 
 const Header = () => {
 
-    const { accommodations, userAccommodations, setUserAccommodations, user, setUser } = useContext(Context);
+    const { accommodations, userAccommodations, setUserAccommodations, user, setUser, token, setToken } = useContext(Context);
     const navigate = useNavigate();
 
     const handleClick = (event) => {
         event.preventDefault();
 
-        axios.post('http://localhost:8080/logout')
-                .then((response) => {
-                    setUser(null);
-                    setUserAccommodations([]);
+        setToken(null);
+        setUser(null);
+        setUserAccommodations([]);
 
-                    console.log(accommodations);
-                    console.log(userAccommodations);
-                    navigate('/');
-                })
-                .catch((error) => {
-                    console.log(error);
-                });
+        localStorage.removeItem("jwt");
+        localStorage.removeItem("user");
+
+        navigate("/");
+
+        // axios.post('http://localhost:8080/logout')
+        //         .then((response) => {
+        //             setUser(null);
+        //             setUserAccommodations([]);
+
+        //             console.log(accommodations);
+        //             console.log(userAccommodations);
+        //             navigate('/');
+        //         })
+        //         .catch((error) => {
+        //             console.log(error);
+        //         });
     }
 
     return (

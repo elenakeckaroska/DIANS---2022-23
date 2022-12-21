@@ -14,12 +14,14 @@ export const ContextProvider = ({ children }) => {
         const fetchData = async () => {
             let { data } = await axios.get('http://localhost:8080/accommodation');
             setAccommodations(data);
-            setLoading(false);
         }
 
         fetchData();
         const jwt = localStorage.getItem("jwt");
+        const userLS = localStorage.getItem("user");
         setToken(jwt);
+        setUser(userLS);
+        setLoading(false);
     }, []);
 
     const value = {
@@ -33,6 +35,9 @@ export const ContextProvider = ({ children }) => {
         setToken
     }
   
+    console.log(token);
+    console.log(user);
+
     return (
         <Context.Provider value={value}>
             {!loading && children}
