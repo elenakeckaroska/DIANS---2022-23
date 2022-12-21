@@ -1,8 +1,7 @@
 package mk.ukim.finki.dians.app.model;
 
-import jakarta.annotation.Nullable;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import lombok.Data;
 import lombok.Value;
 

@@ -1,15 +1,18 @@
 package mk.ukim.finki.dians.app.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Data;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @Data
 @Entity
 @Table(name = "user_accounts")
-public class User {
+public class User implements UserDetails {
 
     @Id
     private String username;
@@ -23,16 +26,22 @@ public class User {
     @ManyToMany
     private List<Accommodation> accommodations;
 
+
     public User(String username, String password, String name, String surname) {
         this.username = username;
         this.password = password;
         this.name = name;
         this.surname = surname;
-        this.accommodations =new ArrayList<>();
+        this.accommodations = new ArrayList<>();
     }
 
     public User() {
 
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return null;
     }
 
     public String getPassword() {
@@ -43,31 +52,24 @@ public class User {
         return username;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
     }
 
-    public String getSurname() {
-        return surname;
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public List<Accommodation> getAccommodations(){
-        return accommodations;
-    }
-
-    public void setAccommodations(List<Accommodation> favorites) {
-        this.accommodations = favorites;
-    }
 }

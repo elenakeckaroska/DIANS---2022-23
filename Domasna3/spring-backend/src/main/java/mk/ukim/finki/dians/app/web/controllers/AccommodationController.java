@@ -1,17 +1,11 @@
-package mk.ukim.finki.dians.app.web;
+package mk.ukim.finki.dians.app.web.controllers;
 
-import jakarta.annotation.PostConstruct;
 import mk.ukim.finki.dians.app.model.Accommodation;
 import mk.ukim.finki.dians.app.service.impl.AccommodationServiceImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/accommodation")
