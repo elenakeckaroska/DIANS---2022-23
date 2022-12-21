@@ -6,6 +6,8 @@ export const Context = React.createContext();
 export const ContextProvider = ({ children }) => {
     const [accommodations, setAccommodations] = useState([]);
     const [userAccommodations, setUserAccommodations] = useState([]);
+    const [user, setUser] = useState(null);
+    const [token, setToken] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -16,13 +18,19 @@ export const ContextProvider = ({ children }) => {
         }
 
         fetchData();
+        const jwt = localStorage.getItem("jwt");
+        setToken(jwt);
     }, []);
 
     const value = {
         accommodations,
         setAccommodations,
         userAccommodations,
-        setUserAccommodations
+        setUserAccommodations,
+        user, 
+        setUser,
+        token,
+        setToken
     }
   
     return (

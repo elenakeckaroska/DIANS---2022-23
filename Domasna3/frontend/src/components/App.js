@@ -15,10 +15,10 @@ const App = () => {
     return (
         <ContextProvider>
             <BrowserRouter>
-                <Header user={user} setUser={setUser} />
+                <Header />
                 <Routes>
-                    <Route path="/" exact element={<MapWithListAndForm user={user}/>} />
-                    <Route path="/login" element={<Login setUser={setUser} />} />
+                    <Route path="/" exact element={<MapWithListAndForm />} />
+                    <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/accommodation/:id" element={<AccommodationInfo />} />
                     <Route path="/:username/favourites" element={<Favourites />} />

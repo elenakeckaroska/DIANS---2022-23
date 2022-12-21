@@ -2,7 +2,7 @@ import React from 'react';
 import AccommodationCard from "./AccommodationCard";
 
 
-const AccommodationList = ({ accommodations, setSelected, user, containerClass, errorMessage, children }) => {
+const AccommodationList = ({ accommodations, setSelected, containerClass, errorMessage, children }) => {
 
     const renderAccommodations = accommodations.map((acc) => {
         return (
@@ -10,7 +10,6 @@ const AccommodationList = ({ accommodations, setSelected, user, containerClass, 
                 key={acc.id}
                 accommodation={acc}
                 setSelected={setSelected}
-                user={user}
             />
         );
     });

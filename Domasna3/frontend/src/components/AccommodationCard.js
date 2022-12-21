@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Context } from '../contexts/Context';
 import axios from 'axios';
 
-const AccommodationCard = ({ accommodation, setSelected, user }) => {
+const AccommodationCard = ({ accommodation, setSelected }) => {
 
-    const { userAccommodations, setUserAccommodations } = useContext(Context);
+    const { userAccommodations, setUserAccommodations, user } = useContext(Context);
 
     const addToFavourites = () => {
         const params = new URLSearchParams({ username: user, accommodationId: accommodation.id });

@@ -8,12 +8,12 @@ const initialErrors = {
     doesntExistError: "",
 }
 
-const Login = ({ setUser }) => {
+const Login = () => {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState(initialErrors);
-    const { accommodations, setAccommodations, userAccommodations, setUserAccommodations } = useContext(Context);
+    const { setUserAccommodations, setUser } = useContext(Context);
     const navigate = useNavigate();
 
     const handleSubmit = (event) => {
