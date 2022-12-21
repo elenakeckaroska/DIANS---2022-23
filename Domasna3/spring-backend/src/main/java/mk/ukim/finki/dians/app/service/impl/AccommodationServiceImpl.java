@@ -5,6 +5,7 @@ import mk.ukim.finki.dians.app.repository.jpa.AccommodationRepository;
 import mk.ukim.finki.dians.app.service.AccommodationService;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -32,13 +33,18 @@ public class AccommodationServiceImpl implements AccommodationService {
 
     @Override
     public List<Accommodation> getAccommodations(List<String> cities, List<String> stars,
-                                                 List<String> propertyType, List<String> internetAccess) {
+                                                 List<String> propertyType, List<String> internetAccess,String sortValue) {
+
+        Comparator<Accommodation> comparator = Comparator.comparing(Accommodation::getName);
+        if(sortValue==null || !sortValue.equals("ascending"))
+            comparator=comparator.reversed();
 
         return accommodationRepository.findAll().stream()
                 .filter(a -> cities.contains(a.getCity()) || cities.get(0).equals("-1"))
                 .filter(a -> stars.contains(a.getStars().split("\\.")[0]) || stars.get(0).equals("-1"))
                 .filter(a -> propertyType.contains(a.getProperty_type()) || propertyType.get(0).equals("-1"))
                 .filter(a -> internetAccess.contains(a.getInternet_access()) || internetAccess.get(0).equals("-1"))
+                .sorted(comparator)
                 .collect(Collectors.toList());
 
     }

@@ -31,7 +31,8 @@ public class AccommodationController {
     }
 
     @GetMapping("/filter")
-    public List<Accommodation> applyFilters(@RequestParam(required = false) MultiValueMap<String, String> multiValueMap){
+    public List<Accommodation> applyFilters(@RequestParam(required = false) MultiValueMap<String, String> multiValueMap,
+                                            @RequestParam(required = false) String sortValue){
         if (multiValueMap == null) {
             return accommodationService.findAll();
         }
@@ -39,7 +40,7 @@ public class AccommodationController {
         List<String> stars = multiValueMap.getOrDefault("stars",List.of("-1"));
         List<String> propertyType = multiValueMap.getOrDefault("property_type",List.of("-1"));
         List<String> internetAccess = multiValueMap.getOrDefault("internet_access",List.of("-1"));
-        return accommodationService.getAccommodations(cities, stars, propertyType, internetAccess);
+        return accommodationService.getAccommodations(cities, stars, propertyType, internetAccess,sortValue);
     }
 
     @GetMapping("/search")
