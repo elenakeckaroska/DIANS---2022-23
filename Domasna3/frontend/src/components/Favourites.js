@@ -30,6 +30,7 @@ const Favourites = () => {
     }, []);
 
     return (
+        <>
         <AccommodationList 
             accommodations={userAccommodations}
             setSelected={null} 
@@ -37,6 +38,16 @@ const Favourites = () => {
             containerClass='favourites-list'
             errorMessage='Немате додадено сместувачки капацитети во листата на омилени!'
         />
+        <div className="back">
+            <button 
+                className="ui button"
+                onClick={() => navigate(-1)}
+            >
+                <i aria-hidden="true" className="angle left icon"></i>
+                Назад
+            </button>
+        </div>
+        </>
     );
 }
 

@@ -78,8 +78,10 @@ const Login = () => {
                     {errors.doesntExistError && <div className="ui red basic label">{errors.doesntExistError}</div>}
                     {errors.tokenExpiredError && <div className="ui red basic label">{errors.tokenExpiredError}</div>}
                 </div>
-                <button className="ui primary button" type="submit" onClick={(e) => handleSubmit(e)} >Најава</button>
-                <Link to="/register" className="ui button">Регистрирај се</Link>
+                <div className="buttons">
+                    <button className="ui primary button" type="submit" onClick={(e) => handleSubmit(e)} >Најава</button>
+                    <Link to="/register" className="ui button">Регистрирај се</Link>
+                </div>
             </form>
         </div>
     );

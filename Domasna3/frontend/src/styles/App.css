@@ -59,7 +59,7 @@ body {
 
 .ui.form {
     width: 20%;
-    padding: 2%;
+    padding: 1% 1% 5% 1%;
 }
 
 .ui.menu {
@@ -92,4 +92,53 @@ body {
 .login-register-container {
     display: grid;
     place-items: center;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 2%;
+}
+
+.back {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        overflow-y: scroll;
+    }
+
+    .overflow {
+        overflow-y: hidden;
+    }
+
+    .map-list-container {
+        display: block;
+    }
+
+    .map-list-container > .ui {
+        height: fit-content;
+    }
+
+    .ui.form.overflow {
+        width: 100%;
+    }
+
+    .ui.cards {
+        width: 100%;
+    }
+
+    .ui.form.login-register-form {
+        width: 70%;
+    }
+
+    .ui.menu {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
 }

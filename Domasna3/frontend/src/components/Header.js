@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate  } from 'react-router-dom';
 import { Context } from '../contexts/Context';
-import axios from 'axios';
 
 const Header = () => {
 
-    const { accommodations, userAccommodations, setUserAccommodations, user, setUser, token, setToken } = useContext(Context);
+    const { setUserAccommodations, user, setUser, token, setToken } = useContext(Context);
     const navigate = useNavigate();
 
     const handleClick = (event) => {
@@ -19,19 +18,6 @@ const Header = () => {
         localStorage.removeItem("user");
 
         navigate("/");
-
-        // axios.post('http://localhost:8080/logout')
-        //         .then((response) => {
-        //             setUser(null);
-        //             setUserAccommodations([]);
-
-        //             console.log(accommodations);
-        //             console.log(userAccommodations);
-        //             navigate('/');
-        //         })
-        //         .catch((error) => {
-        //             console.log(error);
-        //         });
     }
 
     return (

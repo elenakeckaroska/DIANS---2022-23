@@ -158,7 +158,7 @@ const FiltersForm = () => {
                 <div className="ui divider"></div>
                 {renderPropertyTypesInputs}
             </div>
-            <button className="ui blue button" onClick={(e) => handleSubmit(e)}>Прикажи</button>
+            <button className="ui blue button form-button" onClick={(e) => handleSubmit(e)}>Прикажи</button>
         </form>
     );
 };
