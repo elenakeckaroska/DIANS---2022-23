@@ -22,8 +22,6 @@ const Login = () => {
         setErrors({ ...errors, tokenExpiredError: searchParams.get("error") });
     }, []);
 
-    console.log(errors);
-
     const saveTokenAndUserInLocalStorage = (user, token) => {
         localStorage.setItem("jwt", token);
         localStorage.setItem("user", user);
@@ -58,7 +56,7 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div className="login-register-container">
             <form className="ui form login-register-form">
                 <div className="field">
                     <label>Корисничко име</label>

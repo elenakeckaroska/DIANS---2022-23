@@ -13,7 +13,6 @@ const AccommodationInfo = () => {
         const fetchAccommodation = async () => {
             const { data } = await axios.get(`http://localhost:8080/accommodation/${id}`);
             
-            console.log(data);
             setAccommodation(data);
         }
 

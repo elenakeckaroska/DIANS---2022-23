@@ -39,7 +39,7 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className="login-register-container">
             <form className="ui form login-register-form">
                 <div className="field">
                     <label>Корисничко име</label>

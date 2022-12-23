@@ -34,9 +34,6 @@ export const ContextProvider = ({ children }) => {
         token,
         setToken
     }
-  
-    console.log(token);
-    console.log(user);
 
     return (
         <Context.Provider value={value}>
