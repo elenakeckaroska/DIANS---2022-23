@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
-        http.authorizeRequests()
+        http.cors().and().authorizeRequests()
                 .antMatchers("/favorites/add", "/favorites/show").authenticated()
                 .anyRequest().permitAll()
                 .and()

@@ -28,7 +28,7 @@ public class UserController {
         return userService.addFavorite(username, accommodationId);
     }
 
-    @PostMapping("/show")
+    @GetMapping("/show")
     public ResponseEntity<?> showFavorites(Authentication authentication) {
         String username = (String) authentication.getPrincipal();
         User user = userService.findByUsername(username)
