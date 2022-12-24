@@ -1,7 +1,6 @@
 package mk.ukim.finki.dians.app.service.impl;
 
 import com.auth0.jwt.JWT;
-import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import mk.ukim.finki.dians.app.service.JwtUtilService;

@@ -13,7 +13,6 @@ const AccommodationInfo = () => {
         const fetchAccommodation = async () => {
             const { data } = await axios.get(`http://localhost:8080/accommodation/${id}`);
             
-            console.log(data);
             setAccommodation(data);
         }
 
@@ -29,7 +28,7 @@ const AccommodationInfo = () => {
                         <span className="cinema">{accommodation.property_type}</span>
                     </div>
                     <div className="description">
-                        {accommodation.website ? <p>Вебсајт: {accommodation.website}</p> : null}
+                        {accommodation.website ? <p>Вебсајт: <a href={accommodation.website}>{accommodation.website}</a></p> : null}
                         {accommodation.stars ? <p>Рејтинг: {accommodation.stars} <i aria-hidden="true" className="yellow star icon"></i></p> : null}
                         {accommodation.email ? <p>Е-пошта: {accommodation.email}</p> : null}
                         {accommodation.phone ? <p>Телефон: {accommodation.phone}</p> : null}

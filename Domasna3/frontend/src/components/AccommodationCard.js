@@ -3,13 +3,19 @@ import { Link } from 'react-router-dom';
 import { Context } from '../contexts/Context';
 import axios from 'axios';
 
-const AccommodationCard = ({ accommodation, setSelected, user }) => {
+const AccommodationCard = ({ accommodation, setSelected }) => {
 
-    const { userAccommodations, setUserAccommodations } = useContext(Context);
+    const { userAccommodations, setUserAccommodations, user, token } = useContext(Context);
 
     const addToFavourites = () => {
-        const params = new URLSearchParams({ username: user, accommodationId: accommodation.id });
-        axios.post('http://localhost:8080/favorites/add', params, { headers: {'content-type': 'application/x-www-form-urlencoded'}})
+        const params = new URLSearchParams({ accommodationId: accommodation.id });
+        const headersConfig = {
+            headers: {
+               Authorization: "Bearer " + token,
+               'Content-type': 'application/x-www-form-urlencoded'
+            }
+        };
+        axios.post('http://localhost:8080/favorites/add', params, headersConfig)
         .then((response) => {
             let newUserAccommodations;
             if (userAccommodations.find(e => e.id == accommodation.id)) {

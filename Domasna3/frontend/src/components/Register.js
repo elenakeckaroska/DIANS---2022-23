@@ -39,7 +39,7 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className="login-register-container">
             <form className="ui form login-register-form">
                 <div className="field">
                     <label>Корисничко име</label>
@@ -85,9 +85,11 @@ const Register = () => {
                     {errors.emptyError && <div className="ui red basic label">{errors.emptyError}</div>}
                     {errors.passwordsDontMatchError && <div className="ui red basic label">{errors.passwordsDontMatchError}</div>}
                     {errors.doesntExistError && <div className="ui red basic label">{errors.doesntExistError}</div>}
-                </div>                
-                <button className="ui primary button" type="submit" onClick={(e) => handleSubmit(e)} >Регистрација</button>
-                <Link to="/login" className="ui button">Најави се</Link>
+                </div>    
+                <div>           
+                    <button className="ui primary button" type="submit" onClick={(e) => handleSubmit(e)} >Регистрација</button>
+                    <Link to="/login" className="ui button">Најави се</Link>
+                </div> 
             </form>
         </div>
     );

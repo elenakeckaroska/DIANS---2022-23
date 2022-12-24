@@ -1,31 +1,23 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate  } from 'react-router-dom';
 import { Context } from '../contexts/Context';
-import axios from 'axios';
 
-const Header = ({ user, setUser }) => {
+const Header = () => {
 
-    const { accommodations, setAccommodations, userAccommodations, setUserAccommodations } = useContext(Context);
+    const { setUserAccommodations, user, setUser, token, setToken } = useContext(Context);
     const navigate = useNavigate();
 
     const handleClick = (event) => {
         event.preventDefault();
 
-        // let resetAccommodations = accommodations.map(d => ({ ...d, favourite: 'false' }));
-        // setAccommodations(resetAccommodations);
+        setToken(null);
+        setUser(null);
+        setUserAccommodations([]);
 
-        axios.post('http://localhost:8080/logout')
-                .then((response) => {
-                    setUser(null);
-                    setUserAccommodations([]);
+        localStorage.removeItem("jwt");
+        localStorage.removeItem("user");
 
-                    console.log(accommodations);
-                    console.log(userAccommodations);
-                    navigate('/');
-                })
-                .catch((error) => {
-                    console.log(error);
-                });
+        navigate("/");
     }
 
     return (

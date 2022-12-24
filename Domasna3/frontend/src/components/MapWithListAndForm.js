@@ -8,7 +8,7 @@ import { Context } from '../contexts/Context';
 import 'leaflet/dist/leaflet.css';
 import '../styles/App.css';
 
-const MapWithListAndForm = ({ user }) => {
+const MapWithListAndForm = () => {
 
     const [selected, setSelected] = useState(null);
     const { accommodations, setAccommodations } = useContext(Context);
@@ -19,7 +19,6 @@ const MapWithListAndForm = ({ user }) => {
             <AccommodationList 
                 accommodations={accommodations} 
                 setSelected={setSelected} 
-                user={user} 
                 containerClass='overflow'
                 errorMessage='Не се пронајдени сместувачки капацитети. Обидете се повторно!'
             >
