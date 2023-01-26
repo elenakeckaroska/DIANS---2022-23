@@ -1,5 +1,7 @@
 package mk.ukim.finki.dians.app.service.impl;
 
+import mk.ukim.finki.dians.app.exceptions.InvalidAccommodationIdException;
+import mk.ukim.finki.dians.app.exceptions.InvalidUsernameException;
 import mk.ukim.finki.dians.app.model.Accommodation;
 import mk.ukim.finki.dians.app.model.User;
 import mk.ukim.finki.dians.app.repository.jpa.AccommodationRepository;
@@ -24,8 +26,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User addFavorite(String username, Long id){
 
-        Accommodation accommodation= accommodationRepository.findById(id).get();
-        User user = userRepository.findByUsername(username).get();
+        Accommodation accommodation= accommodationRepository.findById(id)
+                .orElseThrow(() -> new InvalidAccommodationIdException("Accommodation ID is not valid!"));
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new InvalidUsernameException("Username is not valid!"));
         List<Accommodation> accommodations =  user.getAccommodations();
 
         if(accommodations.contains(accommodation)) {
