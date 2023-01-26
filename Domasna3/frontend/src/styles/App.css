@@ -64,6 +64,8 @@ body {
 
 .ui.menu {
     margin: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(87deg, rgba(255,255,255,1) 0%, rgba(167,208,249,1) 75%, rgba(167,208,249,1) 100%);
 }
 
 .ui.text.container {
@@ -141,4 +143,11 @@ body {
         width: 100%;
         z-index: 100;
     }
+}
+
+.accommodation-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15%;
 }

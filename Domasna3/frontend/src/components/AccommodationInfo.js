@@ -7,6 +7,8 @@ const AccommodationInfo = () => {
     const [accommodation, setAccommodation] = useState(null);
     const navigate = useNavigate();
     let { id } = useParams();
+    let imgId = Math.floor(Math.random() * 5) + 1; 
+    const image = require(`../pictures/pic${imgId}.svg`);
     id = parseInt(id);
 
     useEffect(() => {
@@ -20,7 +22,7 @@ const AccommodationInfo = () => {
     }, [id]);
 
     const info = accommodation ? (
-        <div className="ui divided items">
+        <div className="ui items accommodation-info">
             <div className="item">
                 <div className="content">
                     <a className="header">{accommodation.name}</a>
@@ -44,8 +46,11 @@ const AccommodationInfo = () => {
                         {accommodation.smoking ? <div className="ui label"><i aria-hidden="true" className="wifi icon"></i>Интернет пристап</div>: null}                        
                     </div>
                 </div>
-            </div>
-            </div>             
+            </div> 
+            <div className="item">
+                <img className="ui massive image" src={image} />
+            </div>           
+        </div>             
     ) : null;
 
     const loading = !accommodation ? (
