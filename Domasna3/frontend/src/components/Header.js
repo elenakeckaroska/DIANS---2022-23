@@ -4,7 +4,7 @@ import { Context } from '../contexts/Context';
 
 const Header = () => {
 
-    const { setUserAccommodations, user, setUser, token, setToken } = useContext(Context);
+    const { setUserAccommodations, user, setUser, setToken } = useContext(Context);
     const navigate = useNavigate();
 
     const handleClick = (event) => {
