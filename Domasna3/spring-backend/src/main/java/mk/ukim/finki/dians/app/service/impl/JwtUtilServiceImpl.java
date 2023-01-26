@@ -17,7 +17,6 @@ import java.util.Optional;
 @Service
 public class JwtUtilServiceImpl implements JwtUtilService {
 
-    //TODO: Make secret not visible in code
     private final Algorithm algorithm = Algorithm.HMAC256("Alohomora");
 
     @Override

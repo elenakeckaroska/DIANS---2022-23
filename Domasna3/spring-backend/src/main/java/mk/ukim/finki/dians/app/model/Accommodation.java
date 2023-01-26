@@ -1,9 +1,9 @@
 package mk.ukim.finki.dians.app.model;
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import lombok.Data;
-import lombok.Value;
 
 @Data
 @Entity
