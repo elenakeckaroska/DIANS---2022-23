@@ -4,10 +4,11 @@ import mk.ukim.finki.dians.app.model.Accommodation;
 import mk.ukim.finki.dians.app.repository.jpa.AccommodationRepository;
 import mk.ukim.finki.dians.app.service.AccommodationService;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.util.MultiValueMap;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 public class AccommodationServiceImpl implements AccommodationService {
@@ -30,26 +31,32 @@ public class AccommodationServiceImpl implements AccommodationService {
 
 
     @Override
-    public List<Accommodation> getAccommodations(List<String> cities, List<String> stars,
-                                                 List<String> propertyType, List<String> internetAccess, String sortValue) {
-
-        List<Accommodation> accommodations = new ArrayList<>();
-        if (sortValue == null || sortValue.equals(""))
-            accommodations = accommodationRepository.findAll();
-        else
-            accommodations = accommodationRepository.findAll(Sort.by(Sort.Direction.fromString(sortValue), "name"));
-
-        return accommodations.stream()
-                .filter(a -> cities.contains(a.getCity()) || cities.get(0).equals("-1"))
-                .filter(a -> stars.contains(a.getStars().split("\\.")[0]) || stars.get(0).equals("-1"))
-                .filter(a -> propertyType.contains(a.getProperty_type()) || propertyType.get(0).equals("-1"))
-                .filter(a -> internetAccess.contains(a.getInternet_access()) || internetAccess.get(0).equals("-1"))
-                .collect(Collectors.toList());
-
+    public List<Accommodation> findByAccommodationName(String keyword) {
+        return accommodationRepository.findByNameContainingIgnoreCase(keyword);
     }
 
     @Override
-    public List<Accommodation> findByAccommodationName(String keyword) {
-        return accommodationRepository.findByNameContainingIgnoreCase(keyword);
+    public List<Accommodation> getAccommodations(MultiValueMap<String, String> multiValueMap, String sortValue) {
+        Specification<Accommodation> accommodationSpecification = multiValueMap.entrySet().stream()
+                .filter(entry -> !entry.getKey().equals("sortValue"))
+                .map(entry -> buildOrSpecification(entry.getKey(), entry.getValue()))
+                .reduce(Specification.where(null), Specification::and);
+
+        if (sortValue != null) {
+            Sort sortCriteria = Sort.by(Sort.Direction.fromString(sortValue), "name");
+            return accommodationRepository.findAll(accommodationSpecification, sortCriteria);
+        } else {
+            return accommodationRepository.findAll(accommodationSpecification);
+        }
+    }
+
+    private Specification<Accommodation> buildOrSpecification(String propertyKey, List<String> values) {
+        return values.stream()
+                .map(value -> buildEqualsSpec(propertyKey, value))
+                .reduce(Specification.where(null), Specification::or);
+    }
+
+    private Specification<Accommodation> buildEqualsSpec(String propertyKey, String value) {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.equal(root.get(propertyKey), value);
     }
 }
