@@ -6,6 +6,7 @@ services:
     build:
       context: spring-backend
       dockerfile: Dockerfile
+    image: kiril41/back-end
     ports:
       - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
     #restart: always
@@ -21,6 +22,7 @@ services:
     build:
       context: frontend
       dockerfile: Dockerfile
+    image: kiril41/front-end
     ports:
       - "3000:3000" # Map the exposed port 80 on the container to port 3000 on the host machine
     #restart: always
@@ -33,6 +35,7 @@ services:
     build:
       context: database
       dockerfile: Dockerfile
+    image: kiril41/database
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
